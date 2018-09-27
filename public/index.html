@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="index.css">   
+</head>
+<body>
+        <h1><center>Tic Tac @ Hiver</center></h1>
+        <h1 id="infodiv"><center>lets play</center></h1>
+        <table>
+            <tr class="r1">
+                <td class="animated fadeInDown" id="tttrow1" onclick="getdata(1)"></td>
+                <td class="animated fadeInDown" id="tttrow2" onclick="getdata('2')"></td>
+                <td class="animated fadeInDown" id="tttrow3" onclick="getdata('3')"></td>
+            </tr>
+            <tr class="r2">
+                <td class="animated fadeInDown" id="tttrow4" onclick="getdata('4')"></td>
+                <td class="animated fadeInDown" id="tttrow5" onclick="getdata('5')"></td>
+                <td class="animated fadeInDown" id="tttrow6" onclick="getdata('6')"></td>
+            </tr>
+            <tr class="r1">
+                <td class="animated fadeInDown" id="tttrow7" onclick="getdata('7')"></td>
+                <td class="animated fadeInDown" id="tttrow8" onclick="getdata('8')"></td>
+                <td class="animated fadeInDown" id="tttrow9" onclick="getdata('9')"></td>
+            </tr>
+            
+        </table>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+            <div class="modal-body">
+                <span class="gamestatus" id="gamestatus">Modal Header</h2>
+            </div>
+            </div>
+        </div>
+<script src="index.js"></script>
+</body>
+</html>

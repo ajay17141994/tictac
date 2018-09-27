@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body {font-family: 'Roboto', sans-serif;background-color: #fff;margin:0px;padding:0px;}
+*{box-sizing: border-box;outline: none;}
+td{width:100px;height: 100px;background:#FF8C00;font-size: 40px;text-align: center;transition:  1s;}
+td:hover{background: #006400;box-shadow: 2px 4px 8px 3px #ddd}
+.r1 td:nth-child(odd){background: #00FFFF }
+.r1 td:nth-child(even){background: #F0FFFF}
+.r2 td:nth-child(even){background: #00FFFF }
+.r2 td:nth-child(odd){background: #F0FFFF}
+table{margin: 20px auto;border-radius: 10px;color: #000;}
+/* The Modal (background) */
+.modal {display: none;position: fixed;z-index: 1; left: 0;top: 0;width: 100%;height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); -webkit-animation-name: fadeIn;-webkit-animation-duration: 0.4s;animation-name: fadeIn;animation-duration: 0.4s}
+/* Modal Content */
+.modal-content {position: fixed;bottom: 0;background-color: #fefefe;width: 100%;-webkit-animation-name: slideIn;-webkit-animation-duration: 0.4s;animation-name: slideIn;animation-duration: 0.4s}
+/* The Close Button */
+.close {color: white;float: right;font-size: 28px;font-weight: bold;}
+.close:hover,
+.close:focus {color: #000;text-decoration: none;cursor: pointer;}
+.modal-body {padding: 2px 16px;background-color: #fff;color: white;}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {from {bottom: -300px; opacity: 0} to {bottom: 0; opacity: 1}}
+@keyframes slideIn {from {bottom: -300px; opacity: 0}to {bottom: 0; opacity: 1}}
+@-webkit-keyframes fadeIn {from {opacity: 0} to {opacity: 1}}
+@keyframes fadeIn {from {opacity: 0} to {opacity: 1}}
+.gamestatus{display: inline-block;width:100%;color:#000;font-size: 22px;font-weight: 700;text-align: center;padding: 25px 0;}
+.sign{color:red;font-size: 25px;}
+
+/*Animation css*/
+.animated {animation-duration: 2s;animation-fill-mode: both;}
+@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}
+.fadeIn {animation-name: fadeIn;}
+@keyframes fadeInUp {from {opacity: 0;transform: translate3d(0, 100%, 0);}to {opacity: 1;transform: none;}}
+.fadeInUp {animation-name: fadeInUp;}
+@keyframes fadeInDown {from {opacity: 0;transform: translate3d(0, -15%, 0);}to {opacity: 1;transform: translate3d(0, 0, 0);}}
+.fadeInDown {animation-name: fadeInDown;}
